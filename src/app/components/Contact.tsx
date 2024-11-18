@@ -38,7 +38,7 @@ const Contact = () => {
 
         <div className="form-group">
           <label htmlFor="notes">Additional Notes:</label>
-          <textarea id="notes" rows="4" placeholder="Enter any additional notes"></textarea>
+          <textarea id="notes"  placeholder="Enter any additional notes"></textarea>
         </div>
 
         <button type="submit">Submit</button>
