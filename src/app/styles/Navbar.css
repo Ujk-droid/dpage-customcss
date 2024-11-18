@@ -1,0 +1,72 @@
+/* Base Styles */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(to bottom left, #bedbf5, #3b5455);
+  color: white;
+  padding:8px 15px;
+}
+
+.ulitem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  list-style: none;
+  font-size: 18px; /* Default font size */
+}
+
+.navbar .ulitem li a {
+  color: rgb(250, 201, 201); /* Set link text color */
+  text-decoration: none; /* Remove underline */
+}
+
+.navbar .ulitem li a:hover {
+  color: #3c3c39; /* Change color on hover */
+}
+
+.navbar .ulitem li a:active {
+  color: #ff6600; /* Change color when link is active */
+}
+
+/* Media Queries */
+/* Small screens (sm) */
+@media (max-width: 640px) {
+  .navbar {
+    flex-direction: column; /* Stack items vertically */
+    padding: 10px;
+  }
+
+  .ulitem {
+    flex-direction: column; /* Stack nav items vertically */
+    gap: 10px; /* Reduce spacing */
+    font-size: 16px; /* Decrease font size */
+  }
+}
+
+/* Medium screens (md) */
+@media (min-width: 641px) and (max-width: 1024px) {
+  .navbar {
+    flex-direction: row; /* Keep items in a row */
+    padding: 15px 20px;
+  }
+
+  .ulitem {
+    font-size: 18px; /* Adjust font size */
+    gap: 15px; /* Reduce spacing */
+  }
+}
+
+/* Large screens (lg) */
+@media (min-width: 1025px) {
+  .navbar {
+    flex-direction: row; /* Keep items in a row */
+    padding: 20px 40px;
+  }
+
+  .ulitem {
+    font-size: 20px; /* Increase font size for larger screens */
+    gap: 25px; /* Increase spacing */
+  }
+}

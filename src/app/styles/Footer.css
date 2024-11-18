@@ -1,0 +1,12 @@
+.footer{
+    width: 100%;
+
+   height:70px;
+   background: linear-gradient(to bottom left, #bedbf5, #3b5455);
+   color: white;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   
+
+}

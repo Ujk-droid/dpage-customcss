@@ -1,0 +1,104 @@
+.ed-main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+ 
+}
+
+.tx {
+  margin-top: 30px;
+  border-radius: 10px; /* Rounded corners */
+  padding: 15px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer; /* Indicate interactivity */
+}
+
+/* Hover Effect for .tx */
+.tx:hover {
+  transform: translateY(-10px) rotate(2deg); /* Adds 3D effect */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Deepens shadow */
+}
+
+/* Other Elements */
+.ed-text {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+}
+
+.ed-p {
+  font-size: 1rem;
+  color: #292929;
+  max-width: 600px;
+  margin: 0 auto 20px;
+  background-color: #f9f9f9;
+}
+
+.box-con, .box-con-2, .box-con-3 {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+  padding: 20px;
+ background-color: antiquewhite;
+ color: #292929;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Child Elements Inside Box */
+.one, .call {
+  width: 48%;
+  text-align: left;
+  background-color: #f1f1d5;
+}
+
+/* Headings */
+.one h1, .call h1 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  background-color: #f1f1d5;
+}
+
+/* Call Text */
+.call p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  background-color: #f1f1d5;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .box-con, .box-con-2, .box-con-3 {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+
+  .one, .call {
+      width: 100%;
+  }
+
+  .ed-text {
+      font-size: 1.75rem;
+  }
+
+  .ed-p {
+      font-size: 0.9rem;
+  }
+  
+  .tx {
+      width: 90%; /* Adjust for smaller screens */
+      margin: 15px auto;
+  }
+}

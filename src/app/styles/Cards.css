@@ -1,0 +1,80 @@
+body{
+  background: linear-gradient(to bottom left, #bedbf5, #3b5455);
+}
+
+
+.main{
+  height:100%;
+  width: 100%;
+ 
+   color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+.ser-contant{
+  width:100%;
+ 
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start; 
+  align-items:center; 
+}
+.boxes-container{
+  width: 100%;
+  display: flex;
+  margin-top:30px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+}
+.box{
+  height: 200px;
+  width: 250px;
+ 
+  border:2px solid;
+  margin: 10px;
+  display: flex;
+  justify-content:start;
+  align-items:center;
+  flex-direction: column;
+  box-shadow: 1px 4px 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.box:hover {
+  transform: translateY(-10px) scale(1.05); /* Lift and enlarge slightly */
+  box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.3); /* Darker, larger shadow */
+}
+.top-div-ser{
+  width: 50%;
+ 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+.s-title{
+  font-size:30px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.s-para{
+  margin-top:20px;
+  
+}
+.s-icon{
+  font-size: 120px;
+ 
+
+
+}
+@media screen and (min-width:100px)and (max-width:750) {
+  .top-div-ser{
+      width: 80%;
+  }
+  
+  
+}
